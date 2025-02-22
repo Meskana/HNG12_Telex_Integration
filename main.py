@@ -4,9 +4,11 @@ from datetime import datetime, timedelta
 from telex_settings import integration_bp
 from apscheduler.schedulers.background import BackgroundScheduler
 from fetch_stock_price import fetch_mtn_stock_price
+from flask_cors import CORS
 
 
 app = Flask(__name__)
+CORS(app)
 
 app.register_blueprint(integration_bp)
 
