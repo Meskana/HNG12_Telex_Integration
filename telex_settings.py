@@ -12,7 +12,7 @@ def integration():
           },
           "descriptions": {
               "app_description": "A brief description of the application functionality.",
-              "app_logo": "https://images.app.goo.gl/KW1aiW6Ygp17chHN6",
+              "app_logo": "https://www.searchenginejournal.com/wp-content/uploads/2019/12/6bd6701a-2fef-4155-a6ec-79c9f29dc4a3-5deaec56c8796.jpeg",
               "app_name": "traker.",
               "app_url": "https://hng12-telex-integration.onrender.com/integration",
               "background_color": "#HEXCODE"  
