@@ -51,7 +51,7 @@ def send_mtn_price_to_telex():
 
 # Schedule the job to run every 24 hours
 scheduler = BackgroundScheduler()
-scheduler.add_job(send_mtn_price_to_telex, "interval", minutes=2)
+scheduler.add_job(send_mtn_price_to_telex, "interval", hours=24)
 scheduler.start()
 
 if __name__ == "__main__":
