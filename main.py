@@ -14,7 +14,7 @@ app.register_blueprint(integration_bp)
 def send_mtn_price_to_telex():
 
     """Fetch MTN stock price and send it to Telex every 24 hours."""
-    
+
     with app.app_context():
         stock_price = fetch_mtn_stock_price()
         print(stock_price)
@@ -53,4 +53,4 @@ scheduler.add_job(send_mtn_price_to_telex, "interval", minutes=2)
 scheduler.start()
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=False)

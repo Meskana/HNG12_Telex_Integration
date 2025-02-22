@@ -12,9 +12,9 @@ def integration():
           },
           "descriptions": {
               "app_description": "A brief description of the application functionality.",
-              "app_logo": "https://cdn.prod.website-files.com/5f05d5858fab461d0d08eaeb/654132b253b4e36b9d799ee4.webp",
+              "app_logo": "https://images.app.goo.gl/KW1aiW6Ygp17chHN6",
               "app_name": "traker.",
-              "app_url": "https://j9bj21z1-5000.euw.devtunnels.ms/integration",
+              "app_url": "https://hng12-telex-integration.onrender.com/integration",
               "background_color": "#HEXCODE"  
           },
           "integration_category": "Monitoring & Logging",
@@ -74,7 +74,7 @@ def integration():
               }
           ],
           "tick_url": "",
-          "target_url": "https://j9bj21z1-5000.euw.devtunnels.ms/webhook"
+          "target_url": "https://hng12-telex-integration.onrender.com/webhook"
       }
     }
 
