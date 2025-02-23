@@ -40,7 +40,7 @@ def send_mtn_price_to_telex():
         headers = {"Content-Type": "application/json"}
         try:
     
-            requests.post("https://ping.telex.im/v1/webhooks/019522fb-eada-73f7-8a01-1dc6887a036d", json=telex_format,headers = headers)
+            requests.post("https://ping.telex.im/v1/webhooks/01953286-a488-7aa7-9584-2566f38f4a66", json=telex_format,headers = headers)
             return jsonify({"status": "success", "stock_price": stock_price})
         except requests.exceptions.RequestException as e:
             print(f"Error: {e}")
@@ -51,7 +51,7 @@ def send_mtn_price_to_telex():
 
 # Schedule the job to run every 24 hours
 scheduler = BackgroundScheduler()
-scheduler.add_job(send_mtn_price_to_telex, "interval", hours=24)
+scheduler.add_job(send_mtn_price_to_telex, "interval", minutes=1)
 scheduler.start()
 
 if __name__ == "__main__":
